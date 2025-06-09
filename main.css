@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos gerais do body */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+/* Estilos do cabeçalho */
+h1 {
+    margin-bottom: 24px;
+    padding-top: 16px;
+    text-align: center;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Estilos do container principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 960px;
+    width: 100%;
+    margin: 40px auto;
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos do menu de seleção */
+.container select {
+    padding: 12px;
+    width: 80%;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+/* Estilos dos formulários */
+.formulario {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.formulario input {
+    padding: 10px;
+    margin: 4px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Estilos dos botões */
+.btn-primario {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primario:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Estilos da lista de carros */
+#lista-completa div {
+    margin: 12px 0;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista-completa button {
+    margin-left: 10px;
+}
+
+/* Estilos dos resultados de busca */
+.resultado-container {
+    margin-top: 20px;
+    text-align: left;
+    width: 80%;
+}
+
+.resultado-container div {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+/* Estilos do cabeçalho da lista */
+.lista-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e9e9e9;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+/* Estilos dos itens da lista */
+.lista-item {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.lista-item button {
+    justify-self: end;
+}
+
+/* Estilos específicos para botões */
+.btn-devolver {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-copiar {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Estilos do rodapé */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 8px 0;
+}
+
+.footer-meta {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+    .container select, .formulario input {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+    
+    .lista-header, .lista-item {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .lista-header span:nth-child(3),
+    .lista-item span:nth-child(3) {
+        display: none;
+    }
+}

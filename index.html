@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento - RM LTDA</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Bem Vindo ao Estacionamento - RM LTDA</h1>
+    </header>
+    
+    <!-- Conteúdo principal -->
+    <main class="container">
+        <!-- Menu de seleção de opções -->
+        <select id="menu" class="selecionar-menu">
+            <option value="">-- Selecione uma Opção --</option>
+            <option value="estacionar">Estacionar Carro</option>
+            <option value="localizar">Localizar Carro</option>
+            <option value="listar">Listar Carros</option>
+            <option value="devolver">Devolver Carro</option>
+        </select>
+
+        <!-- Formulário para estacionar carro -->
+        <div id="form-estacionar" class="formulario" style="display: none;">
+            <input type="text" required id="nome-input" placeholder="Digite o Nome do Proprietario">
+            <input type="text" required id="placa-input" placeholder="Digite a Placa">
+            <button id="btn-estacionar" class="btn-primario">Estacionar</button>
+        </div>
+
+        <!-- Formulário para devolver carro -->
+        <div id="form-devolver" class="formulario" style="display: none;">
+        </div>
+        
+        <!-- Formulário para localizar carro -->
+        <div id="form-localizar" class="formulario" style="display: none;">
+            <input type="text" id="input-busca" placeholder="Buscar por Nome ou Placa">
+            <button id="btn-localizar" class="btn-primario">Buscar</button>
+            <div id="resultado-busca" class="resultado-container"></div>
+        </div>
+        
+        <!-- Lista completa de carros estacionados -->
+        <div id="lista-completa" class="formulario" style="display: none;"></div>
+    </main>
+
+    <!-- Rodapé estilizado -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>🚗 Sistema de Estacionamento Inteligente 🚗</p>
+            <p>Desenvolvido com ❤️ por <strong>Rafael Mendes</strong></p>
+            <p class="footer-meta">Projeto para estudos e práticas de desenvolvimento web</p>
+        </div>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="./main.js" defer></script>
+</body>
+</html>
